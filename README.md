@@ -2,7 +2,7 @@
 
 ### Table of Contents
 
-* [Introduction]()
+* [Introduction](./docs/introduction.md)
 * [Query Grammar]()
 * [Operator Types]()
 * [Elemental Operators]()
