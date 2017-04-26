@@ -3,12 +3,12 @@
 ### Table of Contents
 
 * [Introduction](./docs/introduction.md)
-* [Query Grammar]()
-* [Operator Types]()
-* [Elemental Operators]()
-  * [Primitive Operators]()
-    * [$exists]()
-    * [$mod]()
+* [Query Grammar](./docs/query-grammar.md)
+* [Operator Types](./docs/operator-types.md)
+* [Elemental Operators](./docs/elemental/primitive/exists.md)
+  * [Primitive Operators](./docs/elemental/primitive/exists.md)
+    * [$exists](./docs/elemental/primitive/exists.md)
+    * [$mod](./docs/elemental/primitive/mod.md)
     * [$regexp]()
     * [$type]()
     * [Implicit Equality]()

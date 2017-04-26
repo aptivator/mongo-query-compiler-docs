@@ -1,9 +1,7 @@
 
 ### Installation
 
-```
-npm install --save mongo-query-compiler
-```
+
 
 ### Documentation and Examples
 

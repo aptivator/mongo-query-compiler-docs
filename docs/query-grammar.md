@@ -1,6 +1,6 @@
 ## Mongo Query Compiler Documentation
 
-### Introduction
+### Query Grammar
 
 The utility transpiles mongodb-like query objects into a JavaScript filtering 
 functions.  The latter may then be used with any array's `.filter()` method to 
@@ -13,5 +13,6 @@ subsetting, [lodash](https://lodash.com/)'s `_.filter` method is recommended.
 
 ---
 
+[Introduction](./introduction.md) :snowflake: 
 [Table of Contents](../README.md) :snowflake: 
-[Query Grammar](./query-grammar.md)
+[Operator Types](./operator-types.md)
