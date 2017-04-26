@@ -2,6 +2,7 @@
 
 ### Table of Contents
 
+* [Introduction]()
 * [Query Grammar]()
 * [Operator Types]()
 * [Elemental Operators]()
