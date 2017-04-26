@@ -1,20 +1,4 @@
 
-#### $mod
-
-Performs modulo operation on an object element.  The operation's configuration 
-is an array consisting of divisor and remainder (in that order).
-
-```javascript
-let records = [
-  {name: 'Igor', yearBorn: 1960},
-  {name: 'Vasiliy', yearBorn: 1981}
-];
-
-let query  = compiler({yearBorn: {$mod: [4, 0]}});
-let results = records.filter(query);
-//results = [{name: 'Igor', yearBorn: 1960}]
-```
-
 #### $regexp
 
 Determines if an element fulfills a regular expression.

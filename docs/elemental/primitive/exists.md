@@ -44,8 +44,8 @@ let query = compiler({favorite: {$exists: {food: true, music: true}}});
 let results = records.filter(query);
 //results = [{name: 'Elena', ... }]
 ```
-The above approach is called query namespacing and may be used with any 
-primitive operator (*with some exceptions that will be noted appropriately*).
+The above approach is called query namespacing and may be used with primitive
+and logical operators (*with some exceptions that will be noted appropriately*).
 
 ---
 
