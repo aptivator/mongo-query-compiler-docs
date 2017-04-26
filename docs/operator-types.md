@@ -19,6 +19,6 @@ execution.
 
 ---
 
-[:arrow_backward:Query Grammar](./query-grammar.md) :snowflake: 
+[Previous (Query Grammar)](./query-grammar.md) :snowflake: 
 [Table of Contents](../README.md) :snowflake: 
-[$exists operator](./elemental/primitive/exists.md)
+[Next ($exists operator)](./elemental/primitive/exists.md)

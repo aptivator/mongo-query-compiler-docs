@@ -11,6 +11,6 @@ examples of both usages.
 
 ---
 
-[Introduction](./introduction.md) :snowflake: 
+[Previous (Introduction)](./introduction.md) :snowflake: 
 [Table of Contents](../README.md) :snowflake: 
-[Operator Types](./operator-types.md)
+[Next (Operator Types)](./operator-types.md)

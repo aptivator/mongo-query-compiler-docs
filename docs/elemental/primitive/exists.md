@@ -6,6 +6,6 @@
 
 ---
 
-[Operator Types](../operator-types.md) :snowflake: 
+[Previous (Operator Types)](../operator-types.md) :snowflake: 
 [Table of Contents](../../README.md) :snowflake: 
-[$mod operator](./mod.md)
+[Next ($mod operator)](./mod.md)

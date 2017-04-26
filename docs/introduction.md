@@ -14,4 +14,4 @@ subsetting, [lodash](https://lodash.com/)'s `_.filter` method is recommended.
 ---
 
 [Table of Contents](../README.md) :snowflake: 
-[Query Grammar](./query-grammar.md)
+[Next (Query Grammar)](./query-grammar.md)
