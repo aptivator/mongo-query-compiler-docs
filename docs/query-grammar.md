@@ -2,14 +2,12 @@
 
 ### Query Grammar
 
-The utility transpiles mongodb-like query objects into a JavaScript filtering 
-functions.  The latter may then be used with any array's `.filter()` method to 
-isolate the needed data subset.  The software was written to provide a more 
-natural and declarative way to specify search criteria.  Given MongoDB's 
-popularity, its query grammar was used as the basis for the syntax interpreted 
-by this transpiler.  `mongo-query-compiler` is meant to be used in development
-situations that require relatively complex filtering operations. For rudimentary
-subsetting, [lodash](https://lodash.com/)'s `_.filter` method is recommended.
+`mongo-query-compiler` supports mongodb syntax and augments it with new features 
+such as query namespaces, new operators, and new ways to specify search criteria.  
+The grammar employed by the tool is more flexible and allows a more economical 
+specification of criteria.  For example, `$and` statements can be specified as 
+an object of queries and also as a typical array of queries.  This guide presents
+examples of both usages.
 
 ---
 
