@@ -4,4 +4,4 @@
 
 ---
 
-[Previous]() :snowflake: [Table of Contents]() :snowflake: [Next]()
+[Previous]() :white_circle: [Table of Contents]() :white_circle: [Next]()
