@@ -49,6 +49,6 @@ and logical operators (*with some exceptions that will be noted appropriately*).
 
 ---
 
-[Previous (Operator Types)](../operator-types.md) :snowflake: 
+[Previous (Operator Types)](../../operator-types.md) :snowflake: 
 [Table of Contents](../../README.md) :snowflake: 
 [Next ($mod operator)](./mod.md)
