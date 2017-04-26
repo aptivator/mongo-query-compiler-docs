@@ -2,8 +2,6 @@
 
 ### Introduction
 
-[Previous]()
+---
 
-[Table of Contents]()
-
-[Next]()
+[Previous]() :snowflake: [Table of Contents]() :snowflake: [Next]()
