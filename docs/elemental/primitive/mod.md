@@ -2,8 +2,8 @@
 
 ### $mod
 
-Performs modulo operation on an object element.  The operation's configuration 
-is an array consisting of divisor and remainder (in that order).
+Performs modulo operation on an object element's value.  The operation's 
+configuration is an array consisting of a divisor and remainder, respectively.
 
 ```javascript
 let records = [
