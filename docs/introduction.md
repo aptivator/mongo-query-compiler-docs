@@ -13,4 +13,4 @@ subsetting, [lodash](https://lodash.com/)'s `_.filter` method is recommended.
 
 ---
 
-[Previous]() :snowflake: [Table of Contents]() :snowflake: [Next]()
+[Table of Contents](../README.md) :snowflake: [Next]()
