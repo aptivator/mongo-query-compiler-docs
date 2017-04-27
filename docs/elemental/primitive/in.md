@@ -21,5 +21,5 @@ let results = records.filter(query);
 ---
 
 [Previous ($lte operator)](./lte.md) :snowflake: 
-[Table of Contents](../../README.md) :snowflake: 
+[Table of Contents](../../../README.md) :snowflake: 
 [Next ($nin operator)](./nin.md)

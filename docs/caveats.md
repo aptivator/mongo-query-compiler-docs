@@ -29,4 +29,4 @@ let query = {'records.$something': 22};
 ---
 
 [Previous (Primitives' Filtering)](./primitives-filtering.md) :snowflake: 
-[Table of Contents](../../README.md)
+[Table of Contents](../README.md)

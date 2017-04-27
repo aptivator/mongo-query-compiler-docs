@@ -73,5 +73,5 @@ let query = compiler({'cars.brand': 'toyota'});
 ---
 
 [Previous ($size operator)](./size.md) :snowflake: 
-[Table of Contents](../../README.md) :snowflake: 
+[Table of Contents](../../../README.md) :snowflake: 
 [Next ($where operator)](../free-form/where.md)

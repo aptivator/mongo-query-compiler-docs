@@ -23,5 +23,5 @@ let results = records.filter(query);
 ---
 
 [Previous ($regexp operator)](./regexp.md) :snowflake: 
-[Table of Contents](../../README.md) :snowflake: 
+[Table of Contents](../../../README.md) :snowflake: 
 [Next (Implicit Equality)](./implicit-eq.md)

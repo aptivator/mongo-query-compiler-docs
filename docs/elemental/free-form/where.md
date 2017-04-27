@@ -53,5 +53,5 @@ and `object-browser` are given to `$where()` as parameteres.
 ---
 
 [Previous ($elemMatch operator)](../array/elem-match.md) :snowflake: 
-[Table of Contents](../../README.md) :snowflake: 
+[Table of Contents](../../../README.md) :snowflake: 
 [Next ($ref operator)](../specialty/ref.md)

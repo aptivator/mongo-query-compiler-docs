@@ -78,5 +78,5 @@ equality or inequality, respectively.
 ---
 
 [Previous ($flatten operator)](./utility/flatten.md) :snowflake: 
-[Table of Contents](../../README.md) :snowflake: 
+[Table of Contents](../README.md) :snowflake: 
 [Next (Primitives' Filtering)](./primitives-filtering.md)

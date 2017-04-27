@@ -19,5 +19,5 @@ let results = records.filter(query);
 ---
 
 [Previous ($exists operator)](./exists.md) :snowflake: 
-[Table of Contents](../../README.md) :snowflake: 
+[Table of Contents](../../../README.md) :snowflake: 
 [Next ($regexp operator)](./regexp.md)

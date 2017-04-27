@@ -63,5 +63,5 @@ let results = records.filter(query);
 ---
 
 [Previous ($type operator)](./type.md) :snowflake: 
-[Table of Contents](../../README.md) :snowflake: 
+[Table of Contents](../../../README.md) :snowflake: 
 [Next ($eq operator)](./eq.md)
