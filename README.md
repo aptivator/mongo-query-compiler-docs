@@ -1,5 +1,7 @@
 ## Mongo Query Compiler Documentation
 
+Documentation project for [mongo-query-compiler](https://github.com/aptivator/mongo-query-compiler).
+
 ### Table of Contents
 
 * [Introduction](./docs/introduction.md)
