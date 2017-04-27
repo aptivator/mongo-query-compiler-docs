@@ -62,7 +62,7 @@ let query = {
 
 Whichever scheme is the most appropriate depends on the data queried.  Operators'
 documentation and [Query Namespacing and Unwinding](./query-namespacing-unwinding.md) 
-provide the necessary examples.
+provide the necessary examples to get started.
 
 ---
 
