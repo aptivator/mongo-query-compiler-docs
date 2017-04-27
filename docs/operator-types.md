@@ -21,4 +21,4 @@ execution.
 
 [Previous (Query Grammar)](./query-grammar.md) :snowflake: 
 [Table of Contents](../README.md) :snowflake: 
-[Next ($exists operator)](./elemental/primitive/exists.md)
+[Next (Accessing Object Elements)](./accessing-object-elements.md)
