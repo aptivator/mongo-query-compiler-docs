@@ -26,6 +26,6 @@ let results = records.filter(query);
 
 ---
 
-[Previous ($where operator)](../free-form/where.md) :snowflake: 
+[Previous ($where operator)](../elemental/free-form/where.md) :snowflake: 
 [Table of Contents](../../README.md) :snowflake: 
 [Next ($and operator)](./and.md)
