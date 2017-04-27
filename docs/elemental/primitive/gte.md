@@ -2,6 +2,19 @@
 
 ### $gte
 
+Determines if an object element's value is greater than or equal to a comparator.
+
+```javascript
+let records = [
+  {name: 'Bill', age: 30},
+  {name: 'Sarah', age: 35},
+  {name: 'John', age: 17}
+];
+
+let query = compiler({age: {$gte: 30}});
+let results = records.filter(query);
+//results = [{name: 'Bill', age: 30}, {name: 'Sarah', age: 35}]
+```
 
 ---
 
