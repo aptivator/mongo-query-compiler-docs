@@ -21,6 +21,6 @@ let results = records.filter(query);
 
 ---
 
-[Previous (Operator Types)](../../operator-types.md) :snowflake: 
+[Previous (Accessing Object Elements)](../../accessing-object-elements.md) :snowflake: 
 [Table of Contents](../../../README.md) :snowflake: 
 [Next ($mod operator)](./mod.md)
