@@ -2,6 +2,18 @@
 
 ### $regexp
 
+Determines if an element fulfills a regular expression.
+
+```javascript
+let records = [
+  {name: 'Igor'},
+  {name: 'Vasiliy'}
+];
+
+let query = compiler({name: {$regexp: /iy$/i}});
+let results = records.filter(query);
+//results = [{name: 'Vasiliy'}]
+```
 
 ---
 
