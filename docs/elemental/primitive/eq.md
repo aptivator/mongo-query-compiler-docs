@@ -2,10 +2,10 @@
 
 ### $eq
 
-Supports all of the implicit equality operations along with deep equality.  
-Unlike other primitive operators, $eq does not unwind an object that follows it.  
+Supports all of the implicit equality operations along with deep equality. 
+Unlike other primitive operators, $eq does not unwind an object that follows it.
 Instead, the object will be used to assess deep equality with queried object's
-element's value.
+'s value.
 
 ```javascript
 /* deep equality */

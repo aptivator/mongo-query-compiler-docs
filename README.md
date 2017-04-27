@@ -28,7 +28,7 @@
     * [$where](./docs/elemental/free-form/where.md)
   * [Specialty](./docs/elemental/specialty/ref.md)
     * [$ref](./docs/elemental/specialty/ref.md)
-  * [Elementals and Object Element's Existence](./docs/elemental/element-existence.md)
+  * [Elemental Operations and Element's Existence](./docs/elemental/element-existence.md)
   * [Array to Primitive Comparisons]()
 * [Logical Operators](./docs/logical/implicit-and.md)
   * [Implicit $and](./docs/logical/implicit-and.md)

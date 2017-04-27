@@ -1,6 +1,6 @@
 ## Mongo Query Compiler Documentation
 
-### Elementals and Object Element's Existence
+### Elemental Operations and Element's Existence
 
 It is important to note that all non-negating elemental operations (e.g., `$eq`, 
 `$lt`) will automatically return `false` if an object element does not exist.
