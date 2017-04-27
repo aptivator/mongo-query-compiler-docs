@@ -1,6 +1,13 @@
-Instead of specifying a comparator value, a reference may be used, which is an 
-address to one of the object's elements.  Reference inclusion is supported for 
-all the primitive operators listed in this section: `$gt`, `$gte`, etc.
+## Mongo Query Compiler Documentation
+
+### $ref
+
+For all elemental operators (except `$where`), instead of specifying a 
+comparator value, a reference may be used, which is an address to one of the 
+object's elements.  This allows handling of use cases where filtering criteria 
+may need to be specified on the object itself.  `$ref` may be used as a 
+replacement for a string expression version of `$where`.  **Note:** `$ref` 
+operator is not supported by mongodb.
 
 ```javascript
 /* reference equality */
@@ -16,4 +23,8 @@ let results = records.filter(query);
 //results = [{lastName: 'Smith', maidenName: 'Smith'}]
 ```
 
-**Note:** `$ref` operator is not supported by mongodb.
+---
+
+[Previous ($where operator)](../free-form/where.md) :snowflake: 
+[Table of Contents](../../README.md) :snowflake: 
+[Next (implicit $and operator)](../element-existence.md)

@@ -29,7 +29,6 @@
   * [Specialty](./docs/elemental/specialty/ref.md)
     * [$ref](./docs/elemental/specialty/ref.md)
   * [Elemental Operations and Element's Existence](./docs/elemental/element-existence.md)
-  * [Array to Primitive Comparisons]()
 * [Logical Operators](./docs/logical/implicit-and.md)
   * [Implicit $and](./docs/logical/implicit-and.md)
   * [$and](./docs/logical/and.md)
