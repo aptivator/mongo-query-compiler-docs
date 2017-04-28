@@ -71,7 +71,7 @@ let results = records.filter(query);
 
 #### Caveats
 
-Object unwinding will work for all elemental operators except `$eq` and `$ne`.
+Query unwinding will work for all elemental operators except `$eq` and `$ne`.
 When `$eq` and `$ne` receive an object, the operators will check for deep 
 equality or inequality, respectively.
 
