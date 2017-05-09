@@ -2,8 +2,8 @@
 
 ### Implicit $and
 
-Asserts whether multiple conditions are all satisfied.  A fundamental way to 
-specify multiple criteria is to list them in the same query.
+Asserts whether multiple conditions are satisfied.  A fundamental way to list 
+several criteria is to place them in the same query.
 
 ```javascript
 let records = [{
