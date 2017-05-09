@@ -2,7 +2,7 @@
 
 ### $where
 
-Allows specification of free-form filtering criteria.  `$where` operation 
+Allows specification of free-form filtering criteria.  `$where` operator 
 receives either a string expression or a full JavaScript function to run against
 each document in a collection.
 
@@ -21,7 +21,7 @@ let results = records.filter(query);
 ```
 
 **Note:** `this` refers to a current object in the collection.  MongoDB also 
-uses `obj` to refer to a document to which a `$where` query is applied.  
+uses `obj` to refer to a document to which a `$where` query is applied.
 `mongo-query-compiler` supports only `this` keyword.
 
 ```javascript
