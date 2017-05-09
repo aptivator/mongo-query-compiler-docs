@@ -51,9 +51,9 @@ let results = records.filter(query);
 
 #### Query Unwinding
 
-The query can be trimmed further by assigning the `exists` operator an object of 
-property names whose existence is to be ascertained.  When `$exists` receives an 
-object, it "knows" to unwind it rather than use it literally for comparison.
+The query can be trimmed further by assigning to the `exists` operator an object
+of property names whose existence is to be ascertained.  When `$exists` receives
+an object, it "knows" to unwind it rather than use it literally for comparison.
 
 ```javascript
 let query = compiler({
