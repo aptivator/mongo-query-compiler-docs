@@ -116,7 +116,7 @@ let results = records.filter(query);
 The recommended best practice is to place `$flatten` very near the last property
 name needed for an element's access.
 
-#### `$flatten`ing for `$ref`erences
+#### `$flatten` in `$ref` declarations
 
 In reference declarations, `$flatten` should be specified parallel to the `$ref`
 operator.
