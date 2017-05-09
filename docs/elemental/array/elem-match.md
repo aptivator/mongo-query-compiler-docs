@@ -7,7 +7,7 @@ be specified in exactly the same way as all other queries.  The only exception i
 if an array of primitives is queried.  In the latter case, there is no need to 
 provide a path (key) to an object element, because the element is the "object" 
 (primitive) itself.  As such, `mongo-query-compiler` can query an array of 
-documents (objects) or an array of primitives.  (For more information see
+documents (objects) or an array of primitives.  (For more information also see
 [Primitives' Filtering](../../primitives-filtering.md)).
 
 ```javascript
