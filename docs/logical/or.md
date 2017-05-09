@@ -2,7 +2,7 @@
 
 ### $or
 
-Tests if at least one of the criteria is met.  Like `$and`, `$or` query can be
+Tests if at least one criteria is met.  Like `$and`, `$or` query can be
 specified as an object or an array of queries.
 
 ```javascript
