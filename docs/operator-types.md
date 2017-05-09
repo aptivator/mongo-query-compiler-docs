@@ -5,16 +5,16 @@
 `mongo-query-compiler` supports three types of operators: elemental, logical, 
 and utility.  
 
-Elemental operators can be further categorized into primitive, 
-array, free-form, and specialty.  These are called elemental because they can 
-be applied only to an object element's value and search criteria defined for an 
-elemental **cannot** nest any primitive or logical operators.  
+Elemental operators can be further categorized into primitive, array, free-form, 
+and specialty.  These are called elemental because they can be applied only to 
+an object element's value.  Search criteria defined for an elemental **cannot** 
+nest any primitive or logical operators.
 
 Logical operators allow joining simpler queries to form complex filtering 
-criteria.  Search parameters specified for a logical could and should nest other 
+parameters.  Search settings set for a logical could and should nest other 
 appropriate operators.
 
-Utility modifiers add suplemental query information and controll search criteria 
+Utility modifiers add supplemental query information and control search criteria 
 execution.
 
 ---
