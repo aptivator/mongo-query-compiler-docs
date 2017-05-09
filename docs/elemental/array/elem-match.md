@@ -57,7 +57,7 @@ let results = records.filter(query);
 `mongo-query-compiler`, similar to mongodb, allows using sub-object or dot
 notations to "see through" the nested array of documents.  The above query may 
 be rewritten as illustrated below.  For more complex queries on a nested array 
-of documents, `$elemMatch` operator could be used.
+of documents, `$elemMatch` operator should be used.
 
 ```javascript
 /* $elemMatch query rewritten using sub-object notation */
