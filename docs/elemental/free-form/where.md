@@ -47,7 +47,7 @@ let results = records.filter(query);
 
 `$where()` is called with a current document as its context (i.e., `this`). 
 Current document and `object-browser` are also given to `$where()` as
-parameteres.
+parameters.
 
 **Note:** `$where` operator is top-level and is applied to a document as a whole.
 
