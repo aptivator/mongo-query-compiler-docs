@@ -20,7 +20,7 @@ let records = [{
 ```
 
 Suppose a subset has to be filtered consisting of documents that have existing 
-`food` and `music` in `favorites`.  Here's one such query:
+`food` and `music` in `favorites`.  Here is one such query:
 
 ```javascript
 let query = compiler({
@@ -34,8 +34,8 @@ let results = records.filter(query);
 
 #### Query Namespacing
 
-The can be simplified by using `favorites` as a namespace to access its `food` 
-and `music` properties:
+The query can be simplified by using `favorites` as a namespace to access its 
+`food` and `music` properties:
 
 ```javascript
 let query = compiler({
