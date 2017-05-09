@@ -5,7 +5,7 @@
 Supports all of the implicit equality operations along with deep equality. 
 Unlike other primitive operators, $eq does not unwind an object that follows it.
 Instead, the object will be used to assess deep equality with queried object's
-'s value.
+'s value.  (For more information see [Query Namespacing and Unwinding](../../query-namespacing-unwinding.md)).
 
 ```javascript
 /* deep equality */
