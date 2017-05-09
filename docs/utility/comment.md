@@ -2,7 +2,7 @@
 
 ### $comment
 
-Allows for comments to be added to queries.
+Adds a comment to a query.
 
 ```javascript
 let query = {
