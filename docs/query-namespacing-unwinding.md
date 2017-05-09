@@ -34,8 +34,8 @@ let results = records.filter(query);
 
 #### Query Namespacing
 
-The query seems more verbose than necessary and can be simplified by using
-`favorites` as a namespace to access its `food` and `music` properties:
+The can be simplified by using `favorites` as a namespace to access its `food` 
+and `music` properties:
 
 ```javascript
 let query = compiler({
@@ -51,9 +51,9 @@ let results = records.filter(query);
 
 #### Query Unwinding
 
-The last query can be simplified further by "giving" `exists` operator an object
+The last query can be trimmed further by "giving" `exists` operator an object
 of property names whose existence is to be ascertained.  When `$exists` receives
-an object, it "knows" to unwind it rather than using it literally for comparison.
+an object, it "knows" to unwind it rather than use it literally for comparison.
 
 ```javascript
 let query = compiler({
@@ -72,7 +72,7 @@ let results = records.filter(query);
 #### Caveats
 
 Query unwinding will work for all elemental operators except `$eq` and `$ne`.
-When `$eq` and `$ne` receive an object, the operators will check for deep 
+When the latter receive an object, the operators will check for deep 
 equality or inequality, respectively.
 
 ---
