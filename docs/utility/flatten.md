@@ -118,7 +118,7 @@ name needed for an element's access.
 
 #### `$flatten` in `$ref` declarations
 
-In reference declarations, `$flatten` should be specified parallel to the `$ref`
+In reference settings, `$flatten` should be specified parallel to the `$ref`
 operator.
 
 ```javascript
