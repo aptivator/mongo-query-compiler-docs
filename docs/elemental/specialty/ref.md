@@ -3,9 +3,9 @@
 ### $ref
 
 For all elemental operators (except `$where`), instead of specifying a 
-comparator value, a reference may be used, which is an address to one of the 
-object's elements.  This allows handling of use cases where filtering criteria 
-may need to be specified on the object itself.  `$ref` may be used as a 
+comparator value, a reference may be used, which is a path (address) to one of
+the object's elements.  This allows handling of use cases where filtering 
+criteria may need to be declared on the object itself.  `$ref` may be used as a 
 replacement for a string expression version of `$where`.  **Note:** `$ref` 
 operator is not supported by mongodb.
 
