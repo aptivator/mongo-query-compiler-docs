@@ -2,7 +2,7 @@
 
 ### $and
 
-Determines if several criteria listed within the `$and` clause are all fulfilled.
+Determines if criteria listed within the `$and` clause are fulfilled.
 `mongo-query-compiler`, unlike mongodb, allows `$and` query to be specified as
 either an object or an array of queries.
 
