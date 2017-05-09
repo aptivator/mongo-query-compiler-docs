@@ -3,11 +3,11 @@
 ### $flatten
 
 Directs `object-browser` to flatten nested multidimensional arrays.  Flattening
-allows accessing objects nested in the array as if the objects were not nested.
-`$flatten` can be declared anywhere in the query.  It is recommended that it is
-set closest to the elemental operator that needs the flattened array.  `$flatten` 
-can also be applied to the referenced access path.  In that case, `$flatten` 
-should be placed in parallel with the `$ref` operator.
+allows accessing objects nested in an array as if the objects were not nested.
+`$flatten` can be declared anywhere in the query.  It is recommended that the
+operator is set closest to the elemental operator that needs the flattened array.
+`$flatten` can also be applied to the referenced access path.  In that case,
+`$flatten` should be placed parallel to the `$ref` operator.
 
 ```javascript
 /* sample data */
@@ -90,7 +90,7 @@ let results = records.filter(query);
 ```
 
 A more complex flattening can be devised by overriding `$flatten`s declared 
-near the top of the query with `$flatten`s set more inwardly.
+near the top of the query with `$flatten`s set inwardly.
 
 ```javascript
 /* overriding top-most $flatten */
