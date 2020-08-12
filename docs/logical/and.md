@@ -25,7 +25,7 @@ let records = [{
 }];
 
 let query = {$and: {age: {$gt: 30}, cars: {brand: {$eq: /^acu/}}}};
-let filterer = compiler(query);
+let filterer = compileMongoQuery(query);
 let results = records.filter(filterer);
 //results = [{name: 'Charlie', ... }]
 ```
@@ -40,7 +40,7 @@ let records = [
 ];
 
 let query = {yearBorn: {$and: [{$gt: 1970}, {$mod: [4, 0]}]}};
-let filterer = compiler(query);
+let filterer = compileMongoQuery(query);
 let results = records.filter(filterer);
 //results = [{name: 'Bill', yearBorn: 1980}]
 ```

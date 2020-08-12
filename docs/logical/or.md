@@ -13,7 +13,7 @@ let records = [
 ];
 
 let query = {timeSheet: {$or: {$lte: 7, $gte: 8.5}}};
-let filterer = compiler(query);
+let filterer = compileMongoQuery(query);
 let results = records.filter(filterer);
 //results = [{name: 'Bill', ... }, {name: 'Stuart', ... }]
 ```

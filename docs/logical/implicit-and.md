@@ -20,7 +20,7 @@ let records = [{
 }];
 
 let query = {favorite: {food: /^cho/, music: {$exists: false}}};
-let filterer = compiler(query);
+let filterer = compileMongoQuery(query);
 let results = records.filter(filterer);
 //results = [{name: 'Boris', ... }]
 ```

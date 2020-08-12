@@ -16,7 +16,7 @@ let records = [
 ];
 
 let query = {timeSheet: {$not: {$or: {$lte: 7, $gte: 8.5}}}};
-let filterer = compiler(query);
+let filterer = compileMongoQuery(query);
 let results = records.filter(filterer);
 //results = [{name: 'Joane', ... }]
 ```
@@ -30,7 +30,7 @@ let records = [
 ];
 
 let query = {timeSheet: {$not: {$lte: 7, $gte: 8.5}}};
-let filterer = compiler(query);
+let filterer = compileMongoQuery(query);
 let results = records.filter(filterer);
 //results = [{name: 'Joane', ... }]
 ```
