@@ -10,8 +10,9 @@ let records = [
   {name: 'Vasiliy'}
 ];
 
-let query = compileMongoQuery({name: {$regexp: /iy$/i}});
-let results = records.filter(query);
+let query = {name: {$regexp: /iy$/i}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Vasiliy'}]
 ```
 

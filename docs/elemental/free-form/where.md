@@ -15,8 +15,9 @@ let records = [
   {lastName: 'Smith', maidenName: 'Smith'}
 ];
 
-let query = compileMongoQuery({$where: 'this.lastName === this.maidenName'});
-let results = records.filter(query);
+let query = {$where: 'this.lastName === this.maidenName'};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{lastName: 'Smith', maidenName: 'Smith'}]
 ```
 
@@ -33,15 +34,16 @@ let records = [
   {name: 'Stuart', timeSheet: [7.5, 7, 8, 8, 8.2]}
 ];
 
-let query = compileMongoQuery({
+let query = {
   $where(o, browser) {
     let {timeSheet} = this;
     let sum = timeSheet.reduce((sum, hours) => sum += hours);
     return sum < 40;
   }
-});
+};
 
-let results = records.filter(query);
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Stuart', ... }]
 ```
 

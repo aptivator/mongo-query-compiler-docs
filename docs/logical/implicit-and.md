@@ -19,8 +19,9 @@ let records = [{
   }
 }];
 
-let query = compiler({favorite: {food: /^cho/, music: {$exists: false}}});
-let results = records.filter(query);
+let query = {favorite: {food: /^cho/, music: {$exists: false}}};
+let filterer = compiler(query);
+let results = records.filter(filterer);
 //results = [{name: 'Boris', ... }]
 ```
 

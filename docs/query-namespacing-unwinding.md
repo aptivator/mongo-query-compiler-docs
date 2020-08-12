@@ -23,12 +23,13 @@ Suppose a subset has to be filtered consisting of documents that have existing
 `food` and `music` in `favorites`.  Here is one such query:
 
 ```javascript
-let query = compiler({
+let query = {
   'favorites.food': {$exists: true}, 
-  'favorites.music': {$exists: true}
-});
+  'favorites.music': {$exists: true}  
+};
 
-let results = records.filter(query);
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 
@@ -38,14 +39,15 @@ The query can be simplified by using `favorites` as a namespace to access its
 `food` and `music` properties:
 
 ```javascript
-let query = compiler({
+let query = {
   favorites: {
     food: {$exists: true},
     music: {$exists: true}
   }
-});
+};
 
-let results = records.filter(query);
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 
@@ -56,16 +58,17 @@ of property names whose existence is to be ascertained.  When `$exists` receives
 an object, it "knows" to unwind it rather than use it literally for comparison.
 
 ```javascript
-let query = compiler({
+let query = {
   favorites: {
     $exists: {
       food: true,
       music: true
     }
   }
-});
+};
 
-let results = records.filter(query);
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 

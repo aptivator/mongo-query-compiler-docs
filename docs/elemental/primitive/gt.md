@@ -16,8 +16,9 @@ let records = [
   {name: 'John', age: 17}
 ];
 
-let query = compileMongoQuery({age: {$gt: 30}});
-let results = records.filter(query);
+let query = {age: {$gt: 30}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Sarah', age: 35}]
 ```
 ```javascript
@@ -29,8 +30,9 @@ let records = [
   {name: 'Stuart', timeSheet: [7.5, 7, 8, 8, 8.2]}
 ];
 
-let query = compileMongoQuery({timeSheet: {$gt: 9.9}});
-let results = records.filter(query);
+let query = {timeSheet: {$gt: 9.9}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Joane', ... }]
 ```
 

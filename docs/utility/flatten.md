@@ -50,8 +50,9 @@ let records = [{
 ```javascript
 /* accessing without $flatten */
 
-let query = compiler({'store.employees.name.first': 'John'});
-let results = records.filter(query);
+let query = {'store.employees.name.first': 'John'};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = []
 ```
 
@@ -62,8 +63,9 @@ objects' elements.  The solution is to flatten the multidimensional array.
 ```javascript
 /* accessing WITH $flatten */
 
-let query = compiler({'store.employees.name.first': {$eq: 'John', $flatten: true}});
-let results = records.filter(query);
+let query = {'store.employees.name.first': {$eq: 'John', $flatten: true}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{item: 23432123, ... }]
 ```
 
@@ -72,7 +74,7 @@ As noted in the introduction, `$flatten` can be placed anywhere in a query.
 ```javascript
 /* accessing WITH $flatten placed at the top of the query */
 
-let query = compiler({
+let query = {
   $flatten: true,
   store: {
     employess: {
@@ -83,9 +85,10 @@ let query = compiler({
       }
     }
   }
-});
+};
 
-let results = records.filter(query);
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{item: 23432123, ... }]
 ```
 
@@ -95,7 +98,7 @@ near the top of the query with `$flatten`s set inwardly.
 ```javascript
 /* overriding top-most $flatten */
 
-let query = compiler({
+let query = {
   $flatten: true,
   store: {
     employess: {
@@ -107,9 +110,10 @@ let query = compiler({
       }
     }
   }
-});
+};
 
-let results = records.filter(query);
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = []
 ```
 
@@ -122,16 +126,17 @@ In reference settings, `$flatten` should be specified parallel to the `$ref`
 operator.
 
 ```javascript
-let query = compiler({
+let query = {
   reservedFor: {
     $in: {
       $ref: 'store.employees.name.first', 
       $flatten: true
     }
   }
-});
+};
 
-let results = records.filter(query);
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{item: 23432123, ... }]
 ```
 

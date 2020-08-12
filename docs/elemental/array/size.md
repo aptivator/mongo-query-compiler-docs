@@ -11,8 +11,9 @@ let records = [
   {name: 'John', car: 'volvo'}
 ];
 
-let query = compileMongoQuery({car: {$size: 2}});
-let results = records.filter(query);
+let query = {car: {$size: 2}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Bill', car: ['toyota', 'jeep']}]
 ```
 

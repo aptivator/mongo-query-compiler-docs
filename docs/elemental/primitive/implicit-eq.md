@@ -16,8 +16,9 @@ let records = [{
   }
 }];
 
-let query = compileMongoQuery({name: 'Elena'});
-let results = records.filter(query);
+let query = {name: 'Elena'};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 
@@ -27,16 +28,18 @@ or dot notation.
 ```javascript
 /* sub-object notation */
 
-let query = compileMongoQuery({favorite: {food: /^cho/}});
-let results = records.filter(query);
+let query = {favorite: {food: /^cho/}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 
 ```javascript
 /* dot notation */
 
-let query = compileMongoQuery({'favorite.music': 'trance'});
-let results = records.filter(query);
+let query = {'favorite.music': 'trance'};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 
@@ -47,16 +50,18 @@ values.
 ```javascript
 /* array to array equality */
 
-let query = compileMongoQuery({'favorite.books': ['Dune', 'Fountainhead']});
-let results = records.filter(query);
+let query = {'favorite.books': ['Dune', 'Fountainhead']};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 
 ```javascript
 /* array to value equality */
 
-let query = compileMongoQuery({'favorite.books': 'Dune'});
-let results = records.filter(query);
+let query = {'favorite.books': 'Dune'};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Elena', ... }]
 ```
 

@@ -11,8 +11,9 @@ let records = [
   {name: 'Stuart', timeSheet: [7.5, 7, 8, 8, 8.2]}
 ];
 
-let query = compiler({timeSheet: {$nor: {$lte: 7, $gte: 8.5}}});
-let results = records.filter(query);
+let query = {timeSheet: {$nor: {$lte: 7, $gte: 8.5}}};
+let filterer = compiler(query);
+let results = records.filter(filterer);
 //results = [{name: 'Joane', ... }]
 ```
 

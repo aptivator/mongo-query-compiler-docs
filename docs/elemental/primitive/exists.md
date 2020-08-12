@@ -14,8 +14,9 @@ let records = [
   {name: 'Olga'}
 ];
 
-let query = compileMongoQuery({age: {$exists: true}});
-let results = records.filter(query);
+let query = {age: {$exists: true}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Dmitriy', age: 123}, {name: 'Ivan', age: undefined}]
 ```
 

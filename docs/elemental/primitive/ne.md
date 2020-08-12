@@ -11,8 +11,9 @@ let records = [
   {lastName: 'Smith', maidenName: 'Smith'}
 ];
 
-let query = compileMongoQuery({lastName: {$ne: 'Johnson'}});
-let results = records.filter(query);
+let query = {lastName: {$ne: 'Johnson'}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{lastName: 'Jones', ... }, {lastName: 'Smith', ... }]
 ```
 

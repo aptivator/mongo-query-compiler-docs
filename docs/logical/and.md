@@ -24,8 +24,9 @@ let records = [{
   ]
 }];
 
-let query = compiler({$and: {age: {$gt: 30}, cars: {brand: {$eq: /^acu/}}}});
-let results = records.filter(query);
+let query = {$and: {age: {$gt: 30}, cars: {brand: {$eq: /^acu/}}}};
+let filterer = compiler(query);
+let results = records.filter(filterer);
 //results = [{name: 'Charlie', ... }]
 ```
 
@@ -38,8 +39,9 @@ let records = [
   {name: 'Stuart', yearBorn: 1970}
 ];
 
-let query = compiler({yearBorn: {$and: [{$gt: 1970}, {$mod: [4, 0]}]}});
-let results = records.filter(query);
+let query = {yearBorn: {$and: [{$gt: 1970}, {$mod: [4, 0]}]}};
+let filterer = compiler(query);
+let results = records.filter(filterer);
 //results = [{name: 'Bill', yearBorn: 1980}]
 ```
 

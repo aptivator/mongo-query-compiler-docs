@@ -14,8 +14,10 @@ documents (objects) or an array of primitives.  (For more information also see
 /* querying an array of primitives */
 
 let scores = [55, 57, 60, 55, 22];
-let query = compiler({$gt: 55});
-let results = scores.filter(query);
+
+let query = {$gt: 55};
+let filterer = compileMongoQuery(query);
+let results = scores.filter(filterer);
 //results = [57, 60]
 ```
 
@@ -28,8 +30,9 @@ let records = [
   {name: 'Stuart', timeSheet: [7.5, 7, 8, 8, 8.2]}
 ];
 
-let query = compileMongoQuery({timeSheet: {$elemMatch: {$lt: 7.5}}});
-let results = records.filter(query);
+let query = {timeSheet: {$elemMatch: {$lt: 7.5}}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Stuart', ... }]
 ```
 
@@ -49,8 +52,9 @@ let records = [{
   ]
 }];
 
-let query = compileMongoQuery({cars: {$elemMatch: {brand: 'toyota'}}});
-let results = records.filter(query);
+let query = {cars: {$elemMatch: {brand: 'toyota'}}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
 //results = [{name: 'Ivan', ... }]
 ```
 
@@ -62,13 +66,13 @@ of documents, `$elemMatch` operator should be used.
 ```javascript
 /* $elemMatch query rewritten using sub-object notation */
 
-let query = compiler({cars: {brand: 'toyota'}});
+let filterer = compileMongoQuery({cars: {brand: 'toyota'}});
 ```
 
 ```javascript
 /* $elemMatch query rewritten using dot notation */
 
-let query = compileMongoQuery({'cars.brand': 'toyota'});
+let filterer = compileMongoQuery({'cars.brand': 'toyota'});
 ```
 
 ---
