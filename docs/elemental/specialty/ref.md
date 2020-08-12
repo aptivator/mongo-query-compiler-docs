@@ -18,7 +18,7 @@ let records = [
   {lastName: 'Smith', maidenName: 'Smith'}
 ];
 
-let query = compiler({lastName: {$eq: {$ref: 'maidenName'}}});
+let query = compileMongoQuery({lastName: {$eq: {$ref: 'maidenName'}}});
 let results = records.filter(query);
 //results = [{lastName: 'Smith', maidenName: 'Smith'}]
 ```

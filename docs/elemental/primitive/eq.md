@@ -23,7 +23,7 @@ let records = [{
   }
 }];
 
-let query = compiler({favorite: {$eq: {food: 'chocolate'}}});
+let query = compileMongoQuery({favorite: {$eq: {food: 'chocolate'}}});
 let results = records.filter(query);
 //results = [{name: 'Boris', ... }]
 ```

@@ -6,7 +6,7 @@ Assesses existence of an object element.  **Note:** object element existence is
 tested by checking if object keys include the assessed element's name.
 
 ```javascript
-import compiler from 'mongo-query-compiler';
+import {compileMongoQuery} from 'mongo-query-compiler';
 
 let records = [
   {name: 'Dmitriy', age: 123},
@@ -14,7 +14,7 @@ let records = [
   {name: 'Olga'}
 ];
 
-let query = compiler({age: {$exists: true}});
+let query = compileMongoQuery({age: {$exists: true}});
 let results = records.filter(query);
 //results = [{name: 'Dmitriy', age: 123}, {name: 'Ivan', age: undefined}]
 ```

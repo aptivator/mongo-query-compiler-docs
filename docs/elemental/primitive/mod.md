@@ -11,7 +11,7 @@ let records = [
   {name: 'Vasiliy', yearBorn: 1981}
 ];
 
-let query  = compiler({yearBorn: {$mod: [4, 0]}});
+let query  = compileMongoQuery({yearBorn: {$mod: [4, 0]}});
 let results = records.filter(query);
 //results = [{name: 'Igor', yearBorn: 1960}]
 ```

@@ -11,7 +11,7 @@ let records = [
   {name: 'John', age: 17}
 ];
 
-let query = compiler({age: {$lte: 30}});
+let query = compileMongoQuery({age: {$lte: 30}});
 let results = records.filter(query);
 //results = [{name: 'Bill', age: 30}, {name: 'John', age: 17}]
 ```

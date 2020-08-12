@@ -13,7 +13,7 @@ let records = [
   {name: 'John', car: 'volvo'}
 ];
 
-let query = compiler({car: {$in: ['toyota', 'lexus', 'jeep']}});
+let query = compileMongoQuery({car: {$in: ['toyota', 'lexus', 'jeep']}});
 let results = records.filter(query);
 //results = [{name: 'Bill', ... }, {name: 'Sarah', ... }]
 ```

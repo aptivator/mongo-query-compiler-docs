@@ -28,7 +28,7 @@ let records = [
   {name: 'Stuart', timeSheet: [7.5, 7, 8, 8, 8.2]}
 ];
 
-let query = compiler({timeSheet: {$elemMatch: {$lt: 7.5}}});
+let query = compileMongoQuery({timeSheet: {$elemMatch: {$lt: 7.5}}});
 let results = records.filter(query);
 //results = [{name: 'Stuart', ... }]
 ```
@@ -49,7 +49,7 @@ let records = [{
   ]
 }];
 
-let query = compiler({cars: {$elemMatch: {brand: 'toyota'}}});
+let query = compileMongoQuery({cars: {$elemMatch: {brand: 'toyota'}}});
 let results = records.filter(query);
 //results = [{name: 'Ivan', ... }]
 ```
@@ -68,7 +68,7 @@ let query = compiler({cars: {brand: 'toyota'}});
 ```javascript
 /* $elemMatch query rewritten using dot notation */
 
-let query = compiler({'cars.brand': 'toyota'});
+let query = compileMongoQuery({'cars.brand': 'toyota'});
 ```
 
 ---

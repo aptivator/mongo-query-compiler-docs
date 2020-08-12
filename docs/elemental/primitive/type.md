@@ -14,7 +14,7 @@ let records = [
   {name: 'Natalya', age: 45, married: 'no'}
 ];
 
-let query = compiler({married: {$type: 'boolean'}});
+let query = compileMongoQuery({married: {$type: 'boolean'}});
 let results = records.filter(query);
 //results = [{name: 'Vladimir', age: 55, married: true}]
 ```
