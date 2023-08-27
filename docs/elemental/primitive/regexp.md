@@ -2,7 +2,7 @@
 
 ### $regexp
 
-Determines if an element fulfills a regular expression.
+Determines if an element satisfies a regular expression.
 
 ```javascript
 let records = [
@@ -10,7 +10,18 @@ let records = [
   {name: 'Vasiliy'}
 ];
 
-let query = {name: {$regexp: /iy$/i}};
+let query = {name: {$regexp: /iy$/}};
+let filterer = compileMongoQuery(query);
+let results = records.filter(filterer);
+//results = [{name: 'Vasiliy'}]
+```
+
+Regular expression can also be represented as a string.
+`mongo-query-compiler` will automatically convert it to
+a regular expression object (RegExp).
+
+```javascript
+let query = {name: {$regexp: 'iy$'}};
 let filterer = compileMongoQuery(query);
 let results = records.filter(filterer);
 //results = [{name: 'Vasiliy'}]
@@ -20,4 +31,4 @@ let results = records.filter(filterer);
 
 [Previous ($mod operator)](./mod.md) :snowflake: 
 [Table of Contents](../../../README.md) :snowflake: 
-[Next ($type operator)](./type.md)
+[Next ($regex operator)](./regex.md)

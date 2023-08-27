@@ -13,6 +13,8 @@ Documentation project for [mongo-query-compiler](https://github.com/aptivator/mo
     * [$exists](./docs/elemental/primitive/exists.md)
     * [$mod](./docs/elemental/primitive/mod.md)
     * [$regexp](./docs/elemental/primitive/regexp.md)
+    * [$regex](./docs/elemental/primitive/regex.md)
+    * [$options](./docs/elemental/primitive/options.md)
     * [$type](./docs/elemental/primitive/type.md)
     * [Implicit Equality](./docs/elemental/primitive/implicit-eq.md)
     * [$eq](./docs/elemental/primitive/eq.md)
